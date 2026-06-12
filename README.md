@@ -4,6 +4,17 @@ This repository contains an n8n workflow for depth-based geomechanical analysis 
 
 The workflow receives a user request through chat, extracts one or more requested depths, finds the nearest matching depth from a CSV dataset, calculates key geomechanical properties, and uses a multi-step LLM evaluation process to recommend the most defensible rock physics model.
 
+## Run the Workflow
+
+Click the link below to open the hosted n8n chat and run the workflow:
+
+[Run the Reservoir Rock Physics Workflow](https://yahyamoha.app.n8n.cloud/webhook/5beefa9e-ff41-4bf2-8339-2b093096fccd/chat)
+
+Example inputs:
+
+- `analyze 1050`
+- `compare 1050 and 1090`
+
 ## Overview
 
 The workflow is designed for reservoir geomechanics and rock physics interpretation. It combines:
@@ -265,6 +276,7 @@ The final answer includes:
 - Parent decision control
 - Retry mechanism for weak or unsupported recommendations
 - Final structured interpretation
+- Hosted n8n chat interface
 - GitHub README creation/update through n8n
 
 ## Data Requirements
